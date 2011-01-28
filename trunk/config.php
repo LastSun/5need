@@ -23,5 +23,5 @@ $link 			= mysql_connect($mysql_host,$mysql_user,$mysql_pass) or ('连接数据�
 
 mysql_select_db($mysql_dbname,$link);
 
-mysql_query("SET NAMES GBK");
+mysql_query("SET NAMES UTF8");
 ?>
