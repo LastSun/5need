@@ -15,10 +15,10 @@
   </tr>
   <tr>
     <td colspan="4">
-	<?
+	<?php
     		$mysql_host		= "localhost";
 			$mysql_user		= "root";
-			$mysql_pass		= "admin";
+			$mysql_pass		= "";
 			$mysql_dbname	= "5need";
 			$mysql_tbname	= "data";
 			$link = mysql_connect($mysql_host,$mysql_user,$mysql_pass) or ('连接数据库失败！'.mysql_error());

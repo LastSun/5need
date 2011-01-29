@@ -14,7 +14,7 @@
           <td width="10%"><form method="get" action="hp.php">
               <input type="submit" name="city" value="所有"/>
             </form></td>
-          <?
+          <?php
 			session_start();
 			if(!empty($_GET['city']))$_SESSION['city']=$_GET['city'];
 			if(!empty($_GET['type']))$_SESSION['type']=$_GET['type'];
@@ -27,7 +27,7 @@
 			$organization=$_SESSION['organization'];
 			$mysql_host		= "localhost";
 			$mysql_user		= "root";
-			$mysql_pass		= "admin";
+			$mysql_pass		= "";
 			$mysql_dbname	= "5need";
 			$mysql_tbname	= "data";
 			$link = mysql_connect($mysql_host,$mysql_user,$mysql_pass) or ('连接数据库失败！'.mysql_error());
