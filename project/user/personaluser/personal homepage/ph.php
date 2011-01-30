@@ -7,9 +7,6 @@
 </head>
 
 <body>
-	<div id="messages">
-    	<p>留言板</p>
- 	</div>
 
 	<div id="personal">
     	<p>个人信息</p>
@@ -39,6 +36,9 @@
 	<div id="actionmessage">
     	<p>活动经历</p>
   	</div>
-
+    
+	<div id="messages">
+    	<p>留言板</p>
+ 	</div>
 </body>
 </html>
