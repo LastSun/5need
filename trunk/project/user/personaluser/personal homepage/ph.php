@@ -15,14 +15,10 @@
   </tr>
 
 	<?php
-    		$mysql_host		= "localhost";
-			$mysql_user		= "root";
-			$mysql_pass		= "";
-			$mysql_dbname	= "5need";
-			$mysql_tbname	= "personaluser";
-			$link = mysql_connect($mysql_host,$mysql_user,$mysql_pass) or ('连接数据库失败！'.mysql_error());
+			include '../../../../config.php';
+	
+    		$mysql_tbname	= "personaluser";
 			if(!mysql_select_db($mysql_dbname,$link)) echo ('连接数据表失败！'.mysql_error());
-			mysql_query("SET NAMES UTF8");
 			$query="SELECT * FROM personaluser"; 
 			$result=mysql_query($query);
 			$myrow=mysql_fetch_array($result);
