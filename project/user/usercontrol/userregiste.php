@@ -27,7 +27,7 @@
 	<form action="userregiste.php" method="post">
 		<p>
 			<label for="new_username">用户名:</label>
-			<input type="text" name="new_username" id="new_username" value="<?php if(isset($_POST['new_username'])) echo $_POST['new_username'];?>" />
+			<input type="text" name="new_username" id="new_username" value="<?php if(isset($_POST['new_username'])) echo $_POST['new_username']; ?>" />
 			<span class="error">
 				<?php
 					if (isset($_POST['new_username'])) 
@@ -39,7 +39,7 @@
 		</p>
 		<p>
 			<label for="new_password">密码:</label>
-			<input type="password" name="new_password" id="new_username" />
+			<input type="password" name="new_password" id="new_username" value="<?php if(isset($_POST['new_password'])) echo $_POST['new_password']; ?>" />
 			<span>
 				<?php 
 					if(isset($_POST['new_password']))
