@@ -38,7 +38,7 @@
 			</span>
 		</p>
 		<p>
-			<label form="new_password">密码:</label>
+			<label for="new_password">密码:</label>
 			<input type="password" name="new_password" id="new_username" value="<?php if(isset($_POST['new_password'])) echo $_POST['new_password']; ?>" />
 			<span>
 				<?php 
